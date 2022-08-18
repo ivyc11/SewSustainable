@@ -23,6 +23,19 @@
                                 <color key="textColor" red="0.41568627450980389" green="0.59999999999999998" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fast Fashion Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMB-OU-eUu">
+                                <rect key="frame" x="137" y="601" width="141" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aI-d2-cVj">
+                                <rect key="frame" x="164" y="639" width="88" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click me. "/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.9882352941176471" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -720,6 +733,38 @@
             <point key="canvasLocation" x="2386" y="98"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="gR6-7S-jcv">
+            <objects>
+                <viewController id="fJm-av-dnt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zNE-Jx-vgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-D4-1PF">
+                                <rect key="frame" x="0.0" y="-12" width="414" height="908"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbz-yo-eUF">
+                                        <rect key="frame" x="8" y="0.0" width="414" height="908"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kDW-NI-THJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cbz-yo-eUF" firstAttribute="height" secondItem="zNE-Jx-vgZ" secondAttribute="height" multiplier="0.972098" id="cfd-ml-ubd"/>
+                            <constraint firstItem="mp7-D4-1PF" firstAttribute="top" secondItem="zNE-Jx-vgZ" secondAttribute="top" id="gBg-nr-sTK"/>
+                            <constraint firstItem="cbz-yo-eUF" firstAttribute="width" secondItem="zNE-Jx-vgZ" secondAttribute="width" id="nw4-SG-XO6"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bT7-Ty-qNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3136.2318840579715" y="115.84821428571428"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="mCu-cy-RwW">
             <objects>
                 <viewController id="jOe-gs-hSq" sceneMemberID="viewController">
@@ -737,7 +782,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSs-E8-Ekh">
                                 <rect key="frame" x="33" y="159" width="348" height="649"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Basic Supplies:
+                                <string key="text">Basic Supplies:
 🧶Thread
 🧶Needle
 🧶Fabric Scissors
@@ -749,7 +794,7 @@
 Stitching Techniques:
 Running Stitch: Most basic sewing stitch. Good for quickly mending clothing.
 Back Stitch: A simple yet strong and reliable stitch technique. Good for mending seams as well as replacing zippers
-Cross Stitch: Good for finishing hems and front-facing embroidery.</mutableString>
+Cross Stitch: Good for finishing hems and front-facing embroidery.</string>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
